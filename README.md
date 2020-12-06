@@ -13,7 +13,4 @@ Any modification/change/suggestion is heartly welcomed.
 # 06.12.2020
 Added Single Linked List.
 
-# Regards
-Akhilesh Garg
-
 # Happy Coding ♥
