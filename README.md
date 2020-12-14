@@ -13,4 +13,8 @@ Any modification/change/suggestion is heartly welcomed.
 # 06.12.2020
 Added Single Linked List.
 
+# 15.12.2020
+Added Double Linked List
+Added Queue using Array
+
 # Happy Coding ♥
