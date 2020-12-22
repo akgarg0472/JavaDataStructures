@@ -7,16 +7,16 @@ Generic Data Structures means that for different type of data, we don't have to 
 This is the repository for commonly used data structures where I will implement all data structures in Java Programming Language. I will add generally used DS like Arrays, Linked List, Queues, Sorting Algorithms, Trees etc.  
 I will try to keep the code minimal, simple and with proper documentation and explanation.
 
-# 06.12.2020
-Added Single Linked List.
+# Edits
+#06.12.2020  
+Added Single Linked List.  
 
-# 15.12.2020
+#15.12.2020  
 Added Double Linked List  
-Added Queue using Array
+Added Queue using Array  
 
-# 22.12.2020
-Added ArrayList
-
-# Any modification/change/suggestion is heartly welcomed
+#22.12.2020  
+Added ArrayList  
+#Any modification/change/suggestion is heartly welcomed.
 
 # Happy Coding ♥
