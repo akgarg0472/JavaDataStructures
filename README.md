@@ -19,7 +19,7 @@ Added Queue using Array
 Added ArrayList  
 
 #25.12.2020  
-Added Stack
+Added Stack using Array
   
 #Any modification/change/suggestion is heartly welcomed.
 
