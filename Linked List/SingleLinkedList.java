@@ -295,7 +295,7 @@ public class SingleLinkedList<E> implements Iterable<E> {
         }
 
         Node root = this.start;     // temporary node object to traverse the linked list
-        this.pointer = this.start;  // update the last node reference to the current first node
+        this.pointer = this.start;  // update the last node reference to the current first node because after reverse currently first element will become last element
 
         if (root.getNext() != null) {
             Node firstPointer = root;   // used to hold the reference of next node (initially points to root node)
