@@ -284,6 +284,35 @@ public class SingleLinkedList<E> implements Iterable<E> {
 
         return previousElement;
     }
+    
+    
+     /**
+     * Method to reverse the current linked list.
+     */
+    public void reverse() {
+        if (this.start == null) {
+            return;
+        }
+
+        Node root = this.start;     // temporary node object to traverse the linked list
+        this.pointer = this.start;  // update the last node reference to the current first node
+
+        if (root.getNext() != null) {
+            Node firstPointer = root;   // used to hold the reference of next node (initially points to root node)
+            Node secondPointer = root;  // used to hold the reference of current node (initially points to root node)
+            Node tempPointer = null;    // used to hold the reference of previous node (initially null because no previous element)
+
+            // traverse linked list until list become empty
+            while (firstPointer != null) {
+                firstPointer = firstPointer.getNext();  // holds the reference of next node
+                secondPointer.setNext(tempPointer);     // make current node points to previous node
+                tempPointer = secondPointer;            // makes previous pointer points to current node
+                secondPointer = firstPointer;           // pointer holding current node now points to next available node
+            }
+
+            this.start = tempPointer;     // changing the root node reference to the last node of the linked list
+        }
+    }
 
 
     /**
