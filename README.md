@@ -21,5 +21,5 @@ Added ArrayList
 #25.12.2020  
 Added Stack using Array
 
-#25.06.2020
+#25.06.2021  
 Updated reverse method of single linked list
