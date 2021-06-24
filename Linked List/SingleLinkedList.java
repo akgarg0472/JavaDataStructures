@@ -6,11 +6,12 @@ import java.util.NoSuchElementException;
 /**
  * Generic Single Linked List implementation with basic methods
  * like insertion, deletion, insertion and deletion at certain position and few more.
- * This implementation is not synchronized (means no thread safety)
+ * This implementation of Linked List is non-synchronized
  *
  * @param <E> the type of elements to store in this collection (class type only)
  * @author Akhilesh Garg
  */
+
 public class SingleLinkedList<E> implements Iterable<E> {
 
     // Integer variable to hold the current size of the list
@@ -287,31 +288,46 @@ public class SingleLinkedList<E> implements Iterable<E> {
     
     
      /**
-     * Method to reverse the current linked list.
+     * Method to reverse the current linked list in linear time complexity, O(n).
      */
     public void reverse() {
+        // if linked list is empty then does nothing and terminates reverse() method
         if (this.start == null) {
             return;
         }
 
-        Node root = this.start;     // temporary node object to traverse the linked list
-        this.pointer = this.start;  // update the last node reference to the current first node because after reverse currently first element will become last element
+        // Node root = this.start;     // temporary node object to traverse the linked list
+        // this.pointer = this.start;  // update the last node reference to the current first node because after reverse currently first element will become last element
 
-        if (root.getNext() != null) {
-            Node firstPointer = root;   // used to hold the reference of next node (initially points to root node)
-            Node secondPointer = root;  // used to hold the reference of current node (initially points to root node)
-            Node tempPointer = null;    // used to hold the reference of previous node (initially null because no previous element)
+        // if (root.getNext() != null) {
+            // Node firstPointer = root;   // used to hold the reference of next node (initially points to root node)
+            // Node secondPointer = root;  // used to hold the reference of current node (initially points to root node)
+            // Node tempPointer = null;    // used to hold the reference of previous node (initially null because no previous element)
 
             // traverse linked list until list become empty
-            while (firstPointer != null) {
-                firstPointer = firstPointer.getNext();  // holds the reference of next node
-                secondPointer.setNext(tempPointer);     // make current node points to previous node
-                tempPointer = secondPointer;            // makes previous pointer points to current node
-                secondPointer = firstPointer;           // pointer holding current node now points to next available node
-            }
+            // while (firstPointer != null) {
+                // firstPointer = firstPointer.getNext();  // holds the reference of next node
+                // secondPointer.setNext(tempPointer);     // make current node points to previous node
+                // tempPointer = secondPointer;            // makes previous pointer points to current node
+                // secondPointer = firstPointer;           // pointer holding current node now points to next available node
+            // }
 
-            this.start = tempPointer;     // changing the root node reference to the last node of the linked list
+            // this.start = tempPointer;     // changing the root node reference to the last node of the linked list
+        // }
+        
+        // updated more cleaner and more readable code
+        Node previous = null;   // used to hold the reference of previous node (initially null because no previous element)
+        Node current = this.start;  // used to hold the reference of current node (initially points to root node i.e start node)
+        
+        while (current != null) {
+            Node temp = current.getNext();  // holds the reference of next node to the current node
+            current.setNext(previous);  // make current node points to the previous node
+            previous = current; // makes previous pointer points to the current node
+            current = temp;     // pointer holding current node now points to next available node
         }
+        
+        this.pointer = this.start;  // sets current last node pointer to the start node pointer after reverse
+        this.start = previous;  // sets current first node pointer to the last node pointer after reverse
     }
 
 
