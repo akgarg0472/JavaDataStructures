@@ -9,7 +9,7 @@ I will try to keep the code minimal, simple and with proper documentation and ex
 
 # Updates
 #06.12.2020  
-Added Single Linked List.  
+Added Single Linked List
 
 #15.12.2020  
 Added Double Linked List  
@@ -20,7 +20,6 @@ Added ArrayList
 
 #25.12.2020  
 Added Stack using Array
-  
-#Any modification/change/suggestion is heartly welcomed.
 
-# Happy Coding ♥
+#25.06.2020
+Updated reverse method of single linked list
