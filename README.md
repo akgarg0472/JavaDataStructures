@@ -1,11 +1,10 @@
 # Data_Structure
-Data Structure is nothing but just a technique that tells us how the data is stored and managed in the memory. Managed means that how data is retrieved and manipulated in the memory efficiently.  
-Different Data Structures have different technique to manage data and are used with different case scenario.
+Data Structure is defined as the technique that tells us how the data is stored and managed in the memory space. Managemenet of data means that how data is retrieved and manipulated in the memory efficiently.
+Different Data Structures have different implementation techniques and are used according to use case.
 
 # Generic_Data_Structures
-Generic Data Structures means that for different type of data, we don't have to implement for different type of data like Integers, Strings etc. One code is roubst enough for the management of different type of data types.  
-This is the repository for commonly used data structures where I will implement all data structures in Java Programming Language. I will add generally used DS like Arrays, Linked List, Queues, Sorting Algorithms, Trees etc.  
-I will try to keep the code minimal, simple and with proper documentation and explanation.
+Generic Data Structures means that for different type of data, we don't have to implement for different type of data like Integers, Strings etc. One code implementation is robust & flexible enough to manage different type of data types (excluding primitive type).  
+This repository contains some of data structures which are commonly used in day-to-day life such as Arrays, Linked List, Queues, Sorting Algorithms, Trees etc.  
 
 # Updates
 #06.12.2020  
@@ -23,3 +22,6 @@ Added Stack using Array
 
 #25.06.2021  
 Updated reverse method of single linked list
+
+#01.02.2022  
+Added PriorityQueue using Array
